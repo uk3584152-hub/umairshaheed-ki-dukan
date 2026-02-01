@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pure Desi Shahed</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8e1;
+}
+
+/* HEADER */
+header {
+    background-image: url("https://images.unsplash.com/photo-1587049352851-8d9b1c8d6b03");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+header h1, header p {
+    background: rgba(0,0,0,0.55);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* NAV */
+nav {
+    background-color: #333;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+    padding: 25px;
+}
+
+h2 {
+    color: #e65100;
+}
+
+/* PRODUCTS */
+.product {
+    background: white;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #ccc;
+}
+
+.product img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 10px;
+}
+
+/* BUTTON */
+.order-btn {
+    background-color: #25D366;
+    border: none;
+    padding: 10px 18px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+}
+
+.order-btn:hover {
+    background-color: #1ebc57;
+}
+
+/* FLOATING WHATSAPP */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    padding: 15px 18px;
+    font-size: 22px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #333;
+    z-index: 999;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🍯 Pure Desi Shahed</h1>
+    <p>Special Offer – Khalis Qudrati Shahed</p>
+</header>
+
+<nav>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="products">
+<h2>Hamare Products</h2>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1587049352849-8d7a52b21965">
+<h3>Desi Shahed – 1 KG</h3>
+<p>Price: Rs. 3000</p>
+<a href="https://wa.me/923001234567?text=Assalam-o-Alaikum,%20mujhe%201KG%20Desi%20Shahed%20order%20karna%20hai" target="_blank">
+<button class="order-btn">Order on WhatsApp</button>
+</a>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62">
+<h3>Desi Shahed – 500 Gram</h3>
+<p>Price: Rs. 1600</p>
+<a href="https://wa.me/923001234567?text=Assalam-o-Alaikum,%20500g%20Desi%20Shahed%20order%20karna%20hai" target="_blank">
+<button class="order-btn">Order on WhatsApp</button>
+</a>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1471943311424-646960669fbc">
+<h3>Sheesham Shahed – 1 KG</h3>
+<p>Price: Rs. 3500</p>
+<a href="https://wa.me/923001234567?text=Assalam-o-Alaikum,%20Sheesham%20Shahed%201KG%20order%20karna%20hai" target="_blank">
+<button class="order-btn">Order on WhatsApp</button>
+</a>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71">
+<h3>Beri Shahed – 1 KG</h3>
+<p>Price: Rs. 4000</p>
+<a href="https://wa.me/923001234567?text=Assalam-o-Alaikum,%20Beri%20Shahed%201KG%20order%20karna%20hai" target="_blank">
+<button class="order-btn">Order on WhatsApp</button>
+</a>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1524594157360-2cfd1e27a3a2">
+<h3>Small Pack – 250 Gram</h3>
+<p>Price: Rs. 900</p>
+<a href="https://wa.me/923001234567?text=Assalam-o-Alaikum,%20250g%20Shahed%20order%20karna%20hai" target="_blank">
+<button class="order-btn">Order on WhatsApp</button>
+</a>
+</div>
+
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p><b>WhatsApp:</b> 03472634090</p>
+<p><b>Address:</b> Pakistan</p>
+</section>
+
+<footer>
+<p>© 2026 Pure Desi Shahed</p>
+</footer>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a class="whatsapp-float" 
+href="https://wa.me/03472623090" 
+target="_blank">💬</a>
+
+</body>
+</html>
+<section id="order">
+<h2>Online Order Form</h2>
+
+<form onsubmit="sendWhatsApp(); return false;" class="order-form">
+
+<input type="text" id="name" placeholder="Aap ka Naam" required>
+<input type="text" id="phone" placeholder="Mobile / WhatsApp Number" required>
+
+<select id="product" required>
+<option value="">Product Select Karein</option>
+<option>Desi Shahed 1 KG</option>
+<option>Desi Shahed 500 Gram</option>
+<option>Sheesham Shahed 1 KG</option>
+<option>Beri Shahed 1 KG</option>
+<option>Small Pack 250 Gram</option>
+</select>
+
+<textarea id="address" placeholder="Complete Address" required></textarea>
+
+<button type="submit" class="order-btn">Place Order on WhatsApp</button>
+
+</form>
+</section>
+
+<style>
+.order-form {
+    background: white;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.order-form textarea {
+    height: 80px;
+}
+
+.order-form button {
+    width: 100%;
+}
+</style>
+
+<script>
+function sendWhatsApp() {
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var product = document.getElementById("product").value;
+    var address = document.getElementById("address").value;
+
+    var message = 
+        "🛒 *New Honey Order* %0A%0A" +
+        "👤 Name: " + name + "%0A" +
+        "📞 Phone: " + phone + "%0A" +
+        "🍯 Product: " + product + "%0A" +
+        "📍 Address: " + address;
+
+    var whatsappURL = 
+        "https://wa.me/03472634090?text=" + message;
+
+    window.open(whatsappURL, "_blank");
+}
+</script>
